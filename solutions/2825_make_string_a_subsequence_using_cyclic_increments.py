@@ -1,3 +1,17 @@
+"""2825. Make String a Subsequence Using Cyclic Increments
+
+https://leetcode.com/problems/make-string-a-subsequence-using-cyclic-increments/
+
+>>> solution = Solution()
+>>> solution.canMakeSubsequence("abc", "ad")
+True
+>>> solution.canMakeSubsequence("zc", "ad")
+True
+>>> solution.canMakeSubsequence("ab", "d")
+False
+"""
+
+
 class Solution:
     def canMakeSubsequence(self, str1: str, str2: str) -> bool:
         i, j = 0, 0
