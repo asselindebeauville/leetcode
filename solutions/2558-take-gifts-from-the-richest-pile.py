@@ -15,12 +15,12 @@ import math
 
 class Solution:
     def pickGifts(self, gifts: list[int], k: int) -> int:
-        heap = [-num for num in gifts]
-        heapq.heapify(heap)
+        max_heap = [-num for num in gifts]
+        heapq.heapify(max_heap)
 
         for _ in range(k):
-            max_num = -heapq.heappop(heap)
+            max_num = -heapq.heappop(max_heap)
             remaining = math.isqrt(max_num)
-            heapq.heappush(heap, -remaining)
+            heapq.heappush(max_heap, -remaining)
 
-        return -sum(heap)
+        return -sum(max_heap)
