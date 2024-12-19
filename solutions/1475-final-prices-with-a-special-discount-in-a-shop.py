@@ -19,8 +19,8 @@ class Solution:
 
         for i, price in enumerate(prices):
             while stack and price <= prices[stack[-1]]:
-                discount_idx = stack.pop()
-                answer[discount_idx] -= price
+                discount_index = stack.pop()
+                answer[discount_index] -= price
             stack.append(i)
 
         return answer
