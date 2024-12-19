@@ -15,8 +15,7 @@ https://leetcode.com/problems/maximum-number-of-integers-to-choose-from-a-range-
 class Solution:
     def maxCount(self, banned: list[int], n: int, maxSum: int) -> int:
         banned_set = set(banned)
-        total = 0
-        count = 0
+        total = count = 0
 
         for num in range(1, n + 1):
             if num in banned_set:
