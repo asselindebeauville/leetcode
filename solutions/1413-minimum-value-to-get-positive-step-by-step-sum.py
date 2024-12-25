@@ -14,11 +14,10 @@ https://leetcode.com/problems/minimum-value-to-get-positive-step-by-step-sum/
 
 class Solution:
     def minStartValue(self, nums: list[int]) -> int:
-        curr_sum = 0
-        min_sum = float("inf")
+        curr_sum = min_sum = 0
 
         for num in nums:
             curr_sum += num
             min_sum = min(min_sum, curr_sum)
 
-        return max(1, -min_sum + 1)
+        return -min_sum + 1
