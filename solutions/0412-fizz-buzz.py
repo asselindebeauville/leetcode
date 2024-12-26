@@ -14,15 +14,15 @@ https://leetcode.com/problems/fizz-buzz/
 
 class Solution:
     def fizzBuzz(self, n: int) -> list[str]:
+        rules = {3: "Fizz", 5: "Buzz"}
         answer = []
 
         for i in range(1, n + 1):
             string_builder = []
 
-            if i % 3 == 0:
-                string_builder.append("Fizz")
-            if i % 5 == 0:
-                string_builder.append("Buzz")
+            for divisor, word in rules.items():
+                if i % divisor == 0:
+                    string_builder.append(word)
 
             answer.append("".join(string_builder) if string_builder else str(i))
 
