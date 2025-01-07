@@ -9,6 +9,8 @@ False
 False
 >>> solution.canConstruct("aa", "aab")
 True
+>>> solution.canConstruct("aa", "a")
+False
 """
 
 from collections import Counter
@@ -19,11 +21,4 @@ class Solution:
         if len(ransomNote) > len(magazine):
             return False
 
-        counts = Counter(magazine)
-
-        for char in ransomNote:
-            if not counts[char]:
-                return False
-            counts[char] -= 1
-
-        return True
+        return not Counter(ransomNote) - Counter(magazine)
