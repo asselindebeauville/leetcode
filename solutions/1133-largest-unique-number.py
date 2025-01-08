@@ -14,9 +14,7 @@ from collections import Counter
 
 class Solution:
     def largestUniqueNumber(self, nums: list[int]) -> int:
-        num_count = Counter(nums)
-
         return max(
-            (num for num, count in num_count.items() if count == 1),
+            (num for num, count in Counter(nums).items() if count == 1),
             default=-1,
         )
