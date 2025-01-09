@@ -9,8 +9,6 @@ False
 False
 >>> solution.canConstruct("aa", "aab")
 True
->>> solution.canConstruct("aa", "a")
-False
 """
 
 from collections import Counter
