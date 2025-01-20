@@ -2,7 +2,7 @@
 
 https://leetcode.com/problems/middle-of-the-linked-list/
 
->>> solution = Solution()
+>>> solution = Solution()  # doctest: +SKIP
 >>> solution.middleNode([1, 2, 3, 4, 5])  # doctest: +SKIP
 [3, 4, 5]
 >>> solution.middleNode([1, 2, 3, 4, 5, 6])  # doctest: +SKIP

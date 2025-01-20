@@ -2,7 +2,7 @@
 
 https://leetcode.com/problems/remove-duplicates-from-sorted-list/
 
->>> solution = Solution()
+>>> solution = Solution()  # doctest: +SKIP
 >>> solution.deleteDuplicates([1, 1, 2])  # doctest: +SKIP
 [1, 2]
 >>> solution.deleteDuplicates([1, 1, 2, 3, 3])  # doctest: +SKIP

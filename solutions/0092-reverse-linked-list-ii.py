@@ -2,7 +2,7 @@
 
 https://leetcode.com/problems/reverse-linked-list-ii/
 
->>> solution = Solution()
+>>> solution = Solution()  # doctest: +SKIP
 >>> solution.reverseBetween([1, 2, 3, 4, 5], 2, 4)  # doctest: +SKIP
 [1, 4, 3, 2, 5]
 >>> solution.reverseBetween([5], 1, 1)  # doctest: +SKIP

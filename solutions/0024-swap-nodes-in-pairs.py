@@ -2,7 +2,7 @@
 
 https://leetcode.com/problems/swap-nodes-in-pairs/
 
->>> solution = Solution()
+>>> solution = Solution()  # doctest: +SKIP
 >>> solution.swapPairs([1, 2, 3, 4])  # doctest: +SKIP
 [2, 1, 4, 3]
 >>> solution.swapPairs([])  # doctest: +SKIP

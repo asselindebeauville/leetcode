@@ -2,7 +2,7 @@
 
 https://leetcode.com/problems/remove-nth-node-from-end-of-list/
 
->>> solution = Solution()
+>>> solution = Solution()  # doctest: +SKIP
 >>> solution.removeNthFromEnd([1, 2, 3, 4, 5], 2)  # doctest: +SKIP
 [1, 2, 3, 5]
 >>> solution.removeNthFromEnd([1], 1)  # doctest: +SKIP

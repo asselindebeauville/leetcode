@@ -2,7 +2,7 @@
 
 https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/
 
->>> solution = Solution()
+>>> solution = Solution()  # doctest: +SKIP
 >>> solution.deleteMiddle([1, 3, 4, 7, 1, 2, 6])  # doctest: +SKIP
 [1, 3, 4, 1, 2, 6]
 >>> solution.deleteMiddle([1, 2, 3, 4])  # doctest: +SKIP

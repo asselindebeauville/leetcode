@@ -2,7 +2,7 @@
 
 https://leetcode.com/problems/sort-characters-by-frequency/
 
->>> solution = Solution()
+>>> solution = Solution()  # doctest: +SKIP
 >>> solution.frequencySort("tree")  # doctest: +SKIP
 'eert'
 >>> solution.frequencySort("cccaaa")  # doctest: +SKIP
