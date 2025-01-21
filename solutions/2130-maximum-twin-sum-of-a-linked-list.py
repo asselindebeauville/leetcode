@@ -35,6 +35,7 @@ class Solution:
 
         while fast and fast.next:
             fast = fast.next.next
+
             next_node = slow.next
             slow.next = prev
             prev = slow
