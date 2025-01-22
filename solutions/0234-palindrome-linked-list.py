@@ -4,12 +4,10 @@ https://leetcode.com/problems/palindrome-linked-list/
 
 >>> solution = Solution()
 >>> # head = [1, 2, 2, 1]
->>> head = ListNode(1, ListNode(2, ListNode(2, ListNode(1))))
->>> solution.isPalindrome(head)
+>>> solution.isPalindrome(ListNode(1, ListNode(2, ListNode(2, ListNode(1)))))
 True
 >>> # head = [1, 2]
->>> head = ListNode(1, ListNode(2))
->>> solution.isPalindrome(head)
+>>> solution.isPalindrome(ListNode(1, ListNode(2)))
 False
 """
 
